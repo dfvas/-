@@ -20,20 +20,20 @@ int main(void) {
         int g = v[0];
         long long l = v[0];
         for (int i = 1; i < n; i++) {
-        g = gcd(l, v[i]); // 최대공약수
-        l *= v[i]; // 두 수의 곱
-        l /= g; // 최소공배수
+        g = gcd(l, v[i]); 
+        l *= v[i]; 
+        l /= g; 
     }
 
-    int mul = 1; // 최소공배수에 곱해줄 수.
-    if (l % 2) mul++;  // 최소공배수의 배수 중 짝수여야함.
+    int mul = 1; 
+    if (l % 2) mul++;  
     int flag = 0;
     while(1) {
         for (int i = 0; i < n; i++) {
             int tmp = l * mul / v[i];
             //cout << "!"<< tmp << "\n";
-            if((l*mul/v[i]) % 2) { // even 하지 않으면
-                mul++; // 다음 배수 확인
+            if((l*mul/v[i]) % 2) { 
+                mul++; 
                 break;
             }
             if (i == n - 1) flag = 1;
