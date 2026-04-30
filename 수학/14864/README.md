@@ -1,9 +1,3 @@
-
-https://www.acmicpc.net/problem/14864
-
-
-
-
 # [Gold II] 줄서기 - 14864 
 
 [문제 링크](https://www.acmicpc.net/problem/14864) 
