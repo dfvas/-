@@ -1,4 +1,4 @@
-# [Silver IV] 박 터뜨리기 - 15624
+# [Silver IV] 피보나치 수 7 - 15624
 
 [문제 링크](https://www.acmicpc.net/problem/15624) 
 
