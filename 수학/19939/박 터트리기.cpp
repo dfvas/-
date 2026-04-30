@@ -1,23 +1,27 @@
-#include <iostream>
+#include<iostream>
+
+#define endl "\n"
 using namespace std;
- 
-int main() {
-   int n, k, i;
-   int sum = 0;
- 
-   cin >> n >> k;
-   for (i = 1; i <= k; i++) {  //1)
-      sum += i;
-   }
-   n -= sum;
- 
-   if (n < 0) {  //2)
-      cout << -1;
-   }
-   else {
-      if (n % k == 0)  //3)
-         cout << k - 1;
-      else if (n % k != 0)  //4)
-         cout << k;
-   }
+
+void Answer()
+{
+	int N, SUM = 0, K;
+	cin >> N >> K;
+	SUM = K * (K + 1) / 2;
+	if (N < SUM) cout << -1;
+	else
+	{
+		N -= SUM;
+		N %= K;
+		if (N == 0) cout << K - 1;
+		else cout << K;
+	}
+}
+
+int main()
+{
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL); cout.tie(NULL);
+	Answer();
+	return 0;
 }
